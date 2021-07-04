@@ -15,3 +15,10 @@ class StudentAccount(models.Model):
 
     def __str__(self):
         return self.user
+
+class CareerQuestion(models.Model):
+    question = models.TextField(max_length=200)
+    description = models.TextField(max_length=255)
+
+    def __str__(self):
+        return self.question

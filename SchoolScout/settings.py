@@ -45,9 +45,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
-    'core',
-
-    # 'corsheaders',
+    'core',   
+    # 'core.apps.CoreConfig' #new
 ]
 
 REST_AUTH_REGISTER_SERIALIZERS = {
@@ -66,10 +65,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3000',
-    'http://localhost:8000',
-)
+
 
 ROOT_URLCONF = 'SchoolScout.urls'
 
