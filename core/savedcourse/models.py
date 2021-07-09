@@ -13,6 +13,7 @@ GENDER = (
 )
 
 
+# create classes
 
 class SavedCourse(models.Model):
     student = models.ForeignKey(StudentAccount, on_delete=models.CASCADE, related_name='saved_courses')
